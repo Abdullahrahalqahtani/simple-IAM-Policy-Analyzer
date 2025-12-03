@@ -15,3 +15,9 @@ and then it checks for four things in each policy:
 
 
 then it prints the if a policy has one of these things with its ID
+
+
+The Expected output from the provided files is :
+
+
+<img width="802" height="156" alt="image" src="https://github.com/user-attachments/assets/0bb8c03b-5f18-4dd7-939c-e4c4465a94f4" />
