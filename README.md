@@ -11,7 +11,7 @@ and then it checks for four things in each policy:
 
 3-Privilege Escalation
 
-4-Senstive Actions without condtions 
+4-Sensitive Actions without conditions 
 
 
 then it prints the if a policy has one of these things with its ID
