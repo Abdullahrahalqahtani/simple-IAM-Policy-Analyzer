@@ -1,8 +1,8 @@
 # simple-IAM-Policy-Analyzer
 a very simple AWS IAM policy analyzer
-for python 3.8+
-code reads policies from both bad.json and good.json and put them in the same list
-it checks for four things in each policy:
+for python 3.8+. 
+The code reads policies from both bad.json and good.json and put them in the same list
+and then it checks for four things in each policy:
 
 
 1-Resource Wildcard
