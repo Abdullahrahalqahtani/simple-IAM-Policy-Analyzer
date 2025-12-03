@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "WildResourcePolicy",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "GlobalS3Buckets",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Sid": "WildActionButSpecificResource",
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "arn:aws:lambda:us-east-1:123456789012:function:MyFunction"
+        },
+        {
+            "Sid": "PassRolePlusCompute",
+            "Effect": "Allow",
+            "Action": [
+                "iam:PassRole",
+                "ec2:RunInstances"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CreateUserNoCondition",
+            "Effect": "Allow",
+            "Action": "iam:CreateUser",
+            "Resource": "arn:aws:iam::123456789012:user/*"
+        },
+        {
+            "Sid": "TotalAdmin",
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
